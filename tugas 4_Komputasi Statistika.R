@@ -13,9 +13,6 @@ p_poisson
 p_poisson2 <- ppois(4,lambda, lower.tail=F)
 p_poisson2
 
-#interpretasi
-#peluang jumlah pelanggan yang datang dalam 1 jam sebanyak 5 orang atau lebih adalah sekitar 0.1847 padahal rata rata keatangan hanya 3 orang/jam.
-
 # PMF Poisson
 par(mar = c(4, 4, 2, 1))
 x <- 0:12
@@ -59,12 +56,8 @@ ssim <- rhyper(m,
                m = K,
                n = N - K,
                k = n)
-
 mean(ssim)
 var(ssim)
-
-#interpretasi;
-##nilai yang paling mungkin muncul adalah 2 bola merah (p(x=2)~0.318),sesuai dengan proporsi bola merah di populasi (20/100=20%)dikali jumlah yang diambil
 
 #kasus 3
 #Distribusi Binomial
